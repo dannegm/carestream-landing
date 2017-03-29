@@ -1,9 +1,16 @@
 <?php
 
+//! =========================================================
+
 $iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
 $iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
 $iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
 $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+
+//! =========================================================
+
+$buildAndroid = "./builds/excel_1.6.11.apk";
+$buildIOS = "./builds/excel_1.6.11.ipa"; $buildIOS = "#";
 
 ?>
 
@@ -56,14 +63,14 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
 					<ul class="actions">
 
 						<?php if ($iPhone): ?>
-							<li><a href="#" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
+							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
 
 						<?php elseif ($Android): ?>
-							<li><a href="#" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
+							<li><a href="<?php echo $buildAndroid; ?>" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php else: ?>
-							<li><a href="#" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
-							<li><a href="#" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
+							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
+							<li><a href="<?php echo $buildAndroid; ?>" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php endif; ?>
 					</ul>
