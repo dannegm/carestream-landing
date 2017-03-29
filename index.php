@@ -56,14 +56,14 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
 					<ul class="actions">
 
 						<?php if ($iPhone): ?>
-							<li><a href="#" class="button"><i class="fa fa-apple"> Descargar para iPhone</a></li>
+							<li><a href="#" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
 
 						<?php elseif ($Android): ?>
-							<li><a href="#" class="button"><i class="fa fa-android"> Descargar para Android</a></li>
+							<li><a href="#" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php else: ?>
-							<li><a href="#" class="button"><i class="fa fa-apple"> Descargar para iPhone</a></li>
-							<li><a href="#" class="button"><i class="fa fa-android"> Descargar para Android</a></li>
+							<li><a href="#" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
+							<li><a href="#" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php endif; ?>
 					</ul>
