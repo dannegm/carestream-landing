@@ -63,7 +63,7 @@ $buildIOS = "./builds/excel_1.6.11.ipa"; $buildIOS = "#";
 					<ul class="actions">
 
 						<?php if ($iPhone): ?>
-							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
+							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone. <small>(Subiendo).</small></a></li>
 
 						<?php elseif ($Android): ?>
 							<li><a href="https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo" class="button" style="background-color: #689F38;"><i class="fa fa-download"></i> Descargar Cardboard</a></li>
