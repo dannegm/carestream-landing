@@ -9,8 +9,8 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
 
 //! =========================================================
 
-$buildAndroid = "./builds/excel_1.6.11.apk";
-$buildIOS = "./builds/excel_1.6.11.ipa"; $buildIOS = "#";
+$buildAndroid = "https://a1.files.diawi.com/app-file/G2XpkP9vSF2s7uliEd62.apk";
+$buildIOS = "./builds/excel_1.6.11.ipa";
 
 ?>
 
