@@ -10,7 +10,7 @@ $Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
 //! =========================================================
 
 $buildAndroid = "https://play.google.com/store/apps/details?id=drx.excelplus.vr";
-$buildIOS = "#";
+$buildIOS = "https://itunes.apple.com/us/app/drx-excel-plus/id1220763790?l=es&ls=1&mt=8";
 
 ?>
 
@@ -63,14 +63,15 @@ $buildIOS = "#";
 					<ul class="actions">
 
 						<?php if ($iPhone): ?>
-							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Próximamente.</a></li>
+							<li><a href="https://itunes.apple.com/mx/app/google-cardboard/id987962261?mt=8" class="button" style="background-color: #689F38;"><i class="fa fa-download"></i> Descargar Cardboard</a></li>
+							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
 
 						<?php elseif ($Android): ?>
 							<li><a href="https://play.google.com/store/apps/details?id=com.google.samples.apps.cardboarddemo" class="button" style="background-color: #689F38;"><i class="fa fa-download"></i> Descargar Cardboard</a></li>
 							<li><a href="<?php echo $buildAndroid; ?>" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php else: ?>
-							<!-- <li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li> -->
+							<li><a href="<?php echo $buildIOS; ?>" class="button"><i class="fa fa-apple"></i> Descargar para iPhone</a></li>
 							<li><a href="<?php echo $buildAndroid; ?>" class="button"><i class="fa fa-android"></i> Descargar para Android</a></li>
 
 						<?php endif; ?>
